@@ -11,7 +11,7 @@ Ce dépôt a pour objectif de présenter **ma progression**, **ma méthodologie*
 
 ## 🎓 Formation
 
-**O’clock – Concepteur d’Applications Web (CAW) – parcours augmenté par l’IA**  
+**O’clock – Concepteur d’Applications Web (CDA) – parcours augmenté par l’IA**  
 📅 En cours  
 ⏱️ Formation intensive orientée pratique et projets
 
