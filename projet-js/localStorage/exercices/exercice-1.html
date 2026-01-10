@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <title>Exercice 1</title>
+  </head>
+  <body>
+    <main class="container">
+
+      <!--
+        📝 EXERCICE 1 : Premiers pas avec localStorage
+        
+        OBJECTIF : Comprendre les opérations de base du localStorage
+
+        
+        CONCEPTS UTILES :
+        - localStorage.setItem(key, value) : Sauvegarder une valeur
+        - localStorage.getItem(key) : Récupérer une valeur
+        - localStorage.removeItem(key) : Supprimer une valeur
+        - querySelector() : Sélectionner des éléments HTML
+        - addEventListener() : Gérer les événements
+        - .value : Accéder à la valeur d'un champ
+        - .textContent : Modifier le contenu d'un élément
+        
+        BONNES PRATIQUES :
+        - Toujours vérifier si une valeur existe avant de l'utiliser
+        - Donner des noms clairs aux clés localStorage
+        - Gérer les cas d'erreur (valeurs null, undefined)
+        - Commenter son code pour expliquer chaque étape
+      -->
+
+      <h1>Exercice 1</h1>
+
+      <!-- TODO: Créer l'interface utilisateur ici -->
+
+     
+      <!-- - Champ texte pour saisir une valeur -->
+        <input class="text" type="text" placeholder="Saisir une valeur">
+      <!-- - Bouton "Sauvegarder" -->
+       <button class="save" type="submit">Sauvegarder</button>
+      <!-- - Bouton "Charger" -->
+       <button class="load" type="submit">Charger</button>
+      <!-- - Bouton "Effacer" -->
+       <button class="delete" type="submit">Effacer</button>
+      <!-- - Élément pour afficher la valeur -->
+       <p class="value"></p>
+
+    </main>
+
+    <script>
+      // TODO: ÉTAPE 1 - SÉLECTIONNER LES ÉLÉMENTS
+      // Utiliser querySelector pour récupérer :
+      // - Le champ texte (input)
+      let inputText = document.querySelector(".text")
+      // - Les trois boutons (Sauvegarder, Charger, Effacer)
+      const save = document.querySelector(".save")
+      const load = document.querySelector(".load")
+      const deleteValue = document.querySelector(".delete")
+      // - L'élément où afficher la valeur
+      let valueText = document.querySelector(".value")
+
+      // TODO: ÉTAPE 2 - GESTION DE LA SAUVEGARDE
+      // - Ajouter un event listener sur le bouton "Sauvegarder"
+      save.addEventListener("click", () => {
+        const value = inputText.value
+        localStorage.setItem("inputText", value);
+        valueText.textContent = `${value}`;
+        inputText.value = "";
+      });
+       // - Récupérer la valeur du champ texte
+      // function getText () {
+      //   let inputText = document.querySelector(".text").value
+      // }
+     
+      // - Sauvegarder avec localStorage.setItem()
+      
+      // - Afficher la valeur sauvegardée
+    
+
+      // TODO: ÉTAPE 3 - GESTION DU CHARGEMENT
+      // - Ajouter un event listener sur le bouton "Charger"
+      // - Récupérer la valeur avec localStorage.getItem()
+      // - Afficher la valeur récupérée
+      // - Gérer le cas où la valeur est null
+
+      load.addEventListener("click", () => {
+        const value = localStorage.getItem("inputText");
+        if(value === null || value === "") {
+          valueText.textContent = "Aucune valeur sauvegardée";
+        } else {valueText.textContent = value};
+        console.log(value)
+      });
+
+      // TODO: ÉTAPE 4 - GESTION DE L'EFFACEMENT
+      // - Ajouter un event listener sur le bouton "Effacer"
+      // - Supprimer la valeur avec localStorage.removeItem()
+      // - Effacer l'affichage
+
+      deleteValue.addEventListener("click", () => {
+        localStorage.removeItem("inputText")
+        valueText.textContent = ""
+      });
+
+    </script>
+  </body>
+</html>

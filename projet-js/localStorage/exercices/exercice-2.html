@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <title>Exercice 2</title>
+  </head>
+  <body>
+    <main class="container">
+
+      <!--
+        ⚙️ EXERCICE 2 : Gestionnaire de préférences utilisateur
+        
+        OBJECTIF : Manipuler différents types de données et sauvegarde automatique
+      
+        CONCEPTS UTILES :
+        - Événement "change" : Détecter les modifications de champs
+        - Différents types d'input : text, color, checkbox
+        - Gestion des valeurs par défaut avec l'opérateur ||
+        - Sauvegarde automatique sans bouton
+        - Restauration au chargement de la page
+        
+        BONNES PRATIQUES :
+        - Utiliser des noms de clés cohérents pour localStorage
+        - Gérer les différents types de données (string, boolean)
+        - Vérifier l'existence des valeurs avant de les utiliser
+        - Donner des valeurs par défaut sensées
+      -->
+
+      <h1>Exercice 2</h1>
+
+      <!-- TODO: Créer le formulaire de préférences -->
+      <!-- - Champ texte pour le nom -->
+      <!-- - Champ couleur pour la couleur préférée -->
+      <!-- - Champ texte pour la langue -->
+      <!-- - Checkbox pour le mode sombre/clair -->
+
+      <form id="'form__preferences">
+        <input class="name" type="text" placeholder="Nom">
+        <input class="color" type="text" placeholder="Couleur préférée">
+        <input class="language" type="text" placeholder="Langue">
+        <input id="dark" type="checkbox" name="dark" checked/>
+        <label for="dark">Sombre</label>
+        <input id="bright" type="checkbox" name="bright"/>
+        <label for="bright">Clair</label>
+      </form>
+
+    </main>
+
+    <script>
+      // TODO: ÉTAPE 1 - SÉLECTIONNER LES ÉLÉMENTS
+      // Utiliser querySelector pour récupérer tous les champs :
+      // - Champ nom (input[type="text"])
+      // - Champ couleur (input[type="color"])
+      // - Champ langue (input[type="text"])
+      // - Checkbox mode sombre (input[type="checkbox"])
+
+      let name = document.querySelector(".name")
+      let color = document.querySelector(".color")
+      let language = document.querySelector(".language")
+      let darkMode = document.querySelector("#dark")
+
+      // TODO: ÉTAPE 2 - SAUVEGARDE AUTOMATIQUE
+      // Pour chaque champ, ajouter un event listener "change" :
+      // - Récupérer la valeur du champ modifié
+      // - Sauvegarder avec localStorage.setItem()
+      // - Utiliser des clés différentes : "name", "color", "language", "darkMode"
+      name.addEventListener("change", () => {
+        const nameValue = name.value;
+        localStorage.setItem("name", nameValue)
+      });
+
+           color.addEventListener("change", () => {
+        const colorValue = color.value;
+        localStorage.setItem("color", colorValue)
+      });
+
+           language.addEventListener("change", () => {
+        const languageValue = language.value;
+        localStorage.setItem("language", languageValue)
+      });
+           darkMode.addEventListener("change", () => {
+        const darkModeValue = darkMode.checked;
+        localStorage.setItem("darkMode", darkModeValue)
+      });
+
+      // TODO: ÉTAPE 3 - RESTAURATION AU CHARGEMENT
+      // - Récupérer les valeurs depuis localStorage
+      // - Restaurer dans les champs correspondants
+      // - Gérer les différents types (texte, couleur, checkbox)
+      const nameStorage = localStorage.getItem("name");
+      if(nameStorage) {
+        name.value = nameStorage;
+      };
+
+      const colorStorage = localStorage.getItem("color");
+      if(colorStorage) {
+        color.value = colorStorage;
+      };
+
+      const languageStorage = localStorage.getItem("language");
+      if(languageStorage) {
+        language.value = languageStorage;
+      };
+
+      const darkModeStorage = localStorage.getItem("darkMode");
+      if(darkModeStorage === "true") {
+        darkMode.checked = true;
+      };
+
+    
+
+      // TODO: ÉTAPE 4 - VALEURS PAR DÉFAUT
+      // Pour chaque préférence, vérifier si elle existe :
+      // - Si pas de valeur sauvegardée, définir une valeur par défaut
+      // - Appliquer la valeur par défaut au champ
+      // - Exemples : nom="John Doe", couleur="#000000", langue="Français"
+
+      if(!nameStorage) {
+        name.value = "Donald Juanito Trump"
+      };
+
+      if(!colorStorage) {
+        color.value = "Orange"
+      };
+
+      if(!languageStorage) {
+        language.value = "Spanish"
+      };
+
+     
+
+    </script>
+  </body>
+</html>

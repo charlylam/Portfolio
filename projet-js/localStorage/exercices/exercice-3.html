@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <title>Exercice 3</title>
+  </head>
+  <body>
+    <main class="container">
+
+      <!--
+        📋 EXERCICE 3 : Todo List persistante
+        
+        OBJECTIF : Travailler avec des tableaux et objets complexes
+        
+        CONCEPTS UTILES :
+        - Tableaux d'objets : structure complexe de données
+        - JSON.stringify() : convertir un objet en chaîne
+        - JSON.parse() : convertir une chaîne en objet
+        - forEach() : parcourir un tableau
+        - findIndex() : trouver l'index d'un élément
+        - splice() : supprimer des éléments d'un tableau
+        - createElement() : créer des éléments HTML dynamiquement
+        
+        BONNES PRATIQUES :
+        - Toujours vérifier si les données existent avant de les utiliser
+        - Utiliser des IDs uniques pour identifier les éléments
+        - Rafraîchir l'affichage après chaque modification
+        - Gérer l'état vide (aucune tâche)
+        - Commenter chaque étape du code
+      -->
+
+      <h1>Exercice 3</h1>
+
+      <!-- TODO: Créer l'interface pour ajouter des tâches -->
+      <!-- - Champ texte pour saisir une tâche -->
+      <!-- - Bouton "Ajouter" -->
+      <!-- - Zone pour afficher la liste des tâches -->
+       <input class="text" type="text" placeholder="Saisir une tâche">
+       <button class="addBtn" type="button">Ajouter</button>
+       <ul class="taskList"></ul>
+
+    </main>
+
+    <script>
+      // TODO: ÉTAPE 1 - SÉLECTIONNER LES ÉLÉMENTS
+      // Utiliser querySelector pour récupérer :
+      // - Le champ texte pour saisir une tâche
+      // - Le bouton "Ajouter"
+      // - La zone d'affichage des tâches
+
+      let textInput = document.querySelector(".text");
+      const addBtn = document.querySelector(".addBtn");
+      let list = document.querySelector(".taskList");
+
+      // TODO: ÉTAPE 2 - INITIALISER LES DONNÉES
+      // - Récupérer les tâches depuis localStorage
+      // - Utiliser JSON.parse() pour convertir en tableau
+      // - Gérer le cas où aucune donnée n'existe (tableau vide)
+      // - Exemple : const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+      const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+      // TODO: ÉTAPE 3 - FONCTION D'AFFICHAGE
+      // Créer une fonction renderTasks() qui :
+      // - Vide la zone d'affichage
+      // - Parcourt le tableau des tâches avec forEach()
+      // - Crée un élément HTML pour chaque tâche
+      // - Affiche le texte, le statut et la date
+
+      function renderTasks() {
+        list.innerHTML = "";
+        textInput.value = "";
+        tasks.forEach((task, index) => {
+          const li = document.createElement("li");
+          const checkbox = document.createElement("input");
+          checkbox.type = "checkbox";
+          checkbox.checked = task.completed;
+          
+          checkbox.addEventListener("change", () => {
+          tasks[index].completed = checkbox.checked;
+          localStorage.setItem("tasks", JSON.stringify(tasks));
+          renderTasks();
+          });
+          const span = document.createElement("span");
+    span.textContent = task.text;
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Supprimer";
+
+    deleteBtn.addEventListener("click", () => {
+    tasks.splice(index, 1);
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+    renderTasks();
+    })
+
+          li.appendChild(checkbox);
+          li.appendChild(span);
+          list.appendChild(li);
+          li.appendChild(deleteBtn);
+        });
+      }
+
+      // TODO: ÉTAPE 4 - AJOUTER UNE TÂCHE
+      // - Ajouter un event listener sur le bouton "Ajouter"
+      // - Récupérer le texte saisi
+      // - Créer un nouvel objet tâche avec :
+      //   * id: new Date().getTime() (timestamp unique)
+      //   * text: le texte saisi
+      //   * completed: false (par défaut)
+      //   * date: new Date().toISOString()
+      // - Ajouter au tableau avec push()
+      // - Sauvegarder avec JSON.stringify()
+      // - Appeler renderTasks() pour rafraîchir
+
+      addBtn.addEventListener("click", () => {
+        const textWritten = textInput.value;
+        console.log("Texte saisi:", textWritten); 
+          if(textWritten.trim() === "") {
+          return;}
+        const newTask = {
+          id: new Date().getTime(),
+          text: textWritten,
+          completed: false,
+          date: new Date().toISOString()
+        };
+
+        tasks.push(newTask);
+        localStorage.setItem("tasks", JSON.stringify(tasks))
+        renderTasks();
+      });
+
+      renderTasks();
+
+      // TODO: ÉTAPE 5 - MODIFIER LE STATUT
+      // Pour chaque tâche affichée :
+      // - Créer une checkbox
+      // - Ajouter un event listener "change"
+      // - Modifier task.completed = checkbox.checked
+      // - Sauvegarder et rafraîchir
+
+
+      // TODO: ÉTAPE 6 - SUPPRIMER UNE TÂCHE
+      // Pour chaque tâche affichée :
+      // - Créer un bouton "Supprimer"
+      // - Ajouter un event listener "click"
+      // - Utiliser findIndex() pour trouver l'index
+      // - Utiliser splice(index, 1) pour supprimer
+      // - Sauvegarder et rafraîchir
+
+      // TODO: ÉTAPE 7 - INITIALISATION
+      // - Appeler renderTasks() au chargement de la page
+      // - Utiliser DOMContentLoaded pour s'assurer que le DOM est prêt
+
+    </script>
+  </body>
+</html>
