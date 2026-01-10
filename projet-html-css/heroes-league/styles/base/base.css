@@ -1,0 +1,42 @@
+:root {
+    --background-color: #000000;
+    --main-color: #8983d6;
+    --form-color: #4d4d4d;
+}
+
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../fonts/Satoshi-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Satoshi-Italic';
+    src: url('../fonts/Satoshi-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url('../fonts/Satoshi-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    background-color: var(--background-color);
+    color: white;
+    
+    & a {
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
