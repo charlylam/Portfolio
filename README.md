@@ -60,7 +60,7 @@ Ce dépôt a pour objectif de présenter **ma progression**, **ma méthodologie*
 
 Actuellement, le contenu est volontairement limité car la formation est en cours de démarrage.
 
-- `/projects` : premiers exercices, mini-projets et travaux pratiques
+- `/projets` : premiers exercices, mini-projets et travaux pratiques
 - D’autres projets viendront enrichir ce dépôt progressivement
 
 Chaque projet est accompagné d’un **README expliquant le contexte, les objectifs et les compétences travaillées**.
