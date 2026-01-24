@@ -1,0 +1,53 @@
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem 1.5rem 2rem;
+
+    & .main-title {
+        /* padding:2rem; */
+    }
+    
+    .nav-link { 
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    }
+
+    .nav-link a:hover {
+        transition: 300ms;
+        color: #8983d6;       
+    }
+}
+
+.picture {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+    border-radius: 20px;
+    position: relative;
+    }
+
+    .t-p-banner {
+        font-size: 2rem;
+        font-weight: bold;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .p-banner {
+            font-size: 1rem;
+            padding: 1rem;
+        }
+    }
+}
+
+
+
+              
+    
