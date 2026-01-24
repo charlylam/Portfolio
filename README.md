@@ -60,7 +60,9 @@ Ce dépôt a pour objectif de présenter **ma progression**, **ma méthodologie*
 
 Actuellement, le contenu est volontairement limité car la formation est en cours de démarrage.
 
-- `/projets` : premiers exercices, mini-projets et travaux pratiques
+- `projet-html-css/` : 👉 [Projet en cours pour mettre en pratique les premières bases](https://charlylam.github.io/Portfolio/)
+- `projet-js/`: exercices sur les bases du localStorage
+- `projet-sveltes/`: Projet de fin de saison FrontEnd
 - D’autres projets viendront enrichir ce dépôt progressivement
 
 Chaque projet est accompagné d’un **README expliquant le contexte, les objectifs et les compétences travaillées**.
