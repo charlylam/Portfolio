@@ -39,3 +39,19 @@
 # 10 - Suppression dans pocketbase
 
 ![accueil](../img/suppression_pocketbase.png)
+
+# 11 - Connexion sur mobile
+
+![accueil](../img/responsive_connexion.png)
+
+# 12 - Accueil sur mobile
+
+![accueil](../img/responsive_accueil.png)
+
+# 13 - Création d'une conversation sur mobile
+
+![accueil](../img/responsive_creation.png)
+
+# 14 - Conversation sur mobile
+
+![accueil](../img/responsive_conversation.png)
