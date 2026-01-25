@@ -15,7 +15,7 @@ Vous trouverez avec le projet:
 Dans le dossier `utilisation`:
 
 - Une notice NOTICE_OCHAT.md en guise d'aide pour la gestion de Pocketbase et de l'API Mistral
-- Des captures d'écran du projet dans FONCTIONNEMENT.md
+- Des captures d'écran du projet dans !(FONCTIONNEMENT.md)[https://github.com/charlylam/Portfolio/blob/main/projet-svelte/SA07-projet-ochat-charlylam/utilisation/FONCTIONNEMENT.md]
 
 ## 🎯 Objectifs pédagogiques
 
