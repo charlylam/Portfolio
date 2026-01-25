@@ -60,7 +60,7 @@ Ce dépôt a pour objectif de présenter **ma progression**, **ma méthodologie*
 
 Actuellement, le contenu est volontairement limité car la formation est en cours de démarrage.
 
-- `projet-html-css/` : Projet en cours pour mettre en pratique les premières bases 👉 [le visuel](https://charlylam.github.io/Portfolio/), [le dossier](https://github.com/charlylam/Portfolio/tree/main/projet-html-css/heroes-league)
+- `projet-html-css/` : Mise en pratique des premières bases 👉 [projet en cours](https://charlylam.github.io/Portfolio/), [le dossier](https://github.com/charlylam/Portfolio/tree/main/projet-html-css/heroes-league)
 - `projet-js/`: exercices sur les bases du localStorage
 - `projet-sveltes/`: Projet de fin de saison FrontEnd [O'Chat](https://github.com/charlylam/Portfolio/blob/main/projet-svelte/SA07-projet-ochat-charlylam/README.md)
 - D’autres projets viendront enrichir ce dépôt progressivement
