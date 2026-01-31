@@ -6,9 +6,12 @@ Ochat est une application web de messagerie instantanée alimentée par l'intell
 
 L'application permet aux utilisateurs de créer plusieurs conversations, d'échanger avec une IA, et de conserver l'historique de leurs échanges de manière persistante.
 
-<a href="./video/O'Chat.mp4">
+<a href="https://drive.google.com/file/d/1HV4fXuWBjfsoTUAb56tmhmVAZlpR1MiZ/view?usp=sharing">
   <img src="./video/O_Chat.gif" width="700" alt="Aperçu O'Chat">
 </a>
+
+[Regarder la vidéo complète](https://drive.google.com/file/d/1HV4fXuWBjfsoTUAb56tmhmVAZlpR1MiZ/view?usp=sharing)
+
 
 _Note: Ce projet se concentrait uniquement sur le fichier App.svelte dans le dossier `app` >> `src`_
 
