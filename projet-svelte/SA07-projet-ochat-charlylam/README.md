@@ -21,7 +21,7 @@ Vous trouverez avec le projet:
 Dans le dossier `utilisation`:
 
 - Une notice [NOTICE_OCHAT.md](https://github.com/charlylam/Portfolio/blob/main/projet-svelte/SA07-projet-ochat-charlylam/utilisation/NOTICE_OCHAT.md) afin de faire fonctionner le chat.
-- Des captures d'écran du projet dans [FONCTIONNEMENT.md](https://github.com/charlylam/Portfolio/blob/main/projet-svelte/SA07-projet-ochat-charlylam/utilisation/FONCTIONNEMENT.md)
+- Des captures d'écran du projet dans [FONCTIONNEMENT.md](https://github.com/charlylam/Portfolio/blob/main/projet-svelte/SA07-projet-ochat-charlylam/utilisation/FONCTIONNEMENT.md) (rendu responsive à la fin).
 
 ## 🎯 Objectifs pédagogiques
 
