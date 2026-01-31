@@ -10,6 +10,7 @@ L'application permet aux utilisateurs de créer plusieurs conversations, d'écha
   <img src="./video/O_Chat.gif" width="700" alt="Aperçu O'Chat">
 </a>
 
+[Regarder la vidéo](https://vimeo.com/1160481966?share=copy&fl=sv&fe=ci)
 
 _Note: Ce projet se concentrait uniquement sur le fichier App.svelte dans le dossier `app` >> `src`_
 
