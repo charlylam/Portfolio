@@ -1,4 +1,4 @@
-# Charly Lamena – Recherche de stage Concepteur d'applications Web
+# Charly Lamena – Recherche de stage Développeur Web
 
 👋 Bonjour et bienvenue,
 
