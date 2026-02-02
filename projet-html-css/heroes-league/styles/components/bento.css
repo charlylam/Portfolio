@@ -1,96 +1,82 @@
-    .services {
-    .secondary-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2.5rem;
-        font-size: 1.5rem;
+.services {
+  .secondary-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    font-size: 1.5rem;
 
-        .emph {
-            color: var(--main-color);
-        }
-
-        &::before,
-        &::after {
-            content: "";
-            background-color: var(--main-color);
-            height: 2px; 
-            width: 1rem; 
-            margin: 1.5rem;            
-        }
+    .emph {
+      color: var(--main-color);
     }
+
+    &::before,
+    &::after {
+      content: '';
+      background-color: var(--main-color);
+      height: 2px;
+      width: 1rem;
+      margin: 1.5rem;
+    }
+  }
 }
-    
-    .super-services {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 275px 275px 275px;
-        gap: 1rem;
-        padding: 2.5rem;
-        grid-template-areas: 
-                "bento-moving bento-delivery bento-delivery"
-                "bento-moving bento-traffic bento-party"
-                "bento-feeling-down bento-feeling-down bento-party";
-    }
 
-    .bento-moving {
-        grid-area: bento-moving; 
-    }
+.super-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 275px 275px 275px;
+  gap: 1rem;
+  padding: 2.5rem;
+  grid-template-areas:
+    'bento-moving bento-delivery bento-delivery'
+    'bento-moving bento-traffic bento-party'
+    'bento-feeling-down bento-feeling-down bento-party';
+}
 
-       .bento-delivery {
-        grid-area: bento-delivery; 
-    }
-traffic
-       .bento-traffic {
-        grid-area: bento-traffic; 
-    }
+.bento-moving {
+  grid-area: bento-moving;
+}
 
-       .bento-party {
-        grid-area: bento-party; 
-    }
+.bento-delivery {
+  grid-area: bento-delivery;
+}
+traffic .bento-traffic {
+  grid-area: bento-traffic;
+}
 
-       .bento-feeling-down {
-        grid-area: bento-feeling-down; 
-    }
+.bento-party {
+  grid-area: bento-party;
+}
 
+.bento-feeling-down {
+  grid-area: bento-feeling-down;
+}
 
+.bento {
+  /* grid-area: bento-moving; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--main-color);
+  border-radius: 1rem;
+  padding: 6rem 1rem 6rem 1rem;
 
-    .bento {
-        /* grid-area: bento-moving; */
-        display: flex;
-        flex-direction: column;
-        align-items: center ;
-        justify-content: center;
-        border: 1.5px solid var(--main-color);
-        border-radius: 1rem;
-        padding: 6rem 1rem 6rem 1rem;
+  & .choices {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 
-        & .choices {
-            color: var(--main-color);
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
+  & .content {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
 
-        & .content {
-            text-align: center;
-            font-weight: bold;
-            padding-bottom: 1rem;
-        }
-
-        & .btn {
-            color: white;
-            font-weight: bold;
-            background-color: var(--main-color);
-            border: 1px solid var(--main-color);
-            border-radius: 1rem;
-            padding: 0.5rem;
-            margin-bottom: 3rem;
-        }
-
-        & .details {
-            text-align: center;
-            font-style: italic;
-            font-size: 0.5rem;
-        }
-
-    }  
+  & .details {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+}
