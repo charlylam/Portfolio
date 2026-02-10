@@ -1,0 +1,280 @@
+/* TITRES H3  */
+
+.secondary-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-size: 2rem;
+
+  .emph {
+    color: var(--main-color);
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    background-color: var(--main-color);
+    height: 2px;
+    width: 1rem;
+    margin: 1.5rem;
+  }
+}
+
+/* LES SERVICES  */
+
+.super-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 275px 275px 275px;
+  gap: 1rem;
+  padding: 2.5rem;
+  grid-template-areas:
+    'bento-moving bento-delivery bento-delivery'
+    'bento-moving bento-traffic bento-party'
+    'bento-feeling-down bento-feeling-down bento-party';
+}
+
+.bento-moving {
+  grid-area: bento-moving;
+}
+
+.bento-delivery {
+  grid-area: bento-delivery;
+}
+traffic .bento-traffic {
+  grid-area: bento-traffic;
+}
+
+.bento-party {
+  grid-area: bento-party;
+}
+
+.bento-feeling-down {
+  grid-area: bento-feeling-down;
+}
+
+.bento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--main-color);
+  border-radius: 1rem;
+  padding: 6rem 1rem 6rem 1rem;
+
+  & .choices {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  & .content {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+
+  & .details {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+}
+
+/* L'EQUIPE  */
+
+.heroes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 275px 275px;
+  gap: 1rem;
+  padding: 1.5rem;
+  grid-template-areas:
+    'card-cat card-carotte card-ultraquenarde'
+    'card-poulpy card-orang card-superime';
+}
+
+.card-cat {
+  grid-area: card-cat;
+}
+
+.card-carotte {
+  grid-area: card-carotte;
+}
+
+.card-ultraquenarde {
+  grid-area: card-ultraquenarde;
+}
+
+.card-poulpy {
+  grid-area: card-poulpy;
+}
+
+.card-orang {
+  grid-area: card-orang;
+}
+
+.card-superime {
+  grid-area: card-superime;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+
+  img {
+    border-radius: 1rem;
+  }
+
+  .sticker {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .name {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    & .p-sticker {
+      font-size: 12px;
+      padding: 0.5rem 2rem 0.5rem 2rem;
+    }
+  }
+
+  .top-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: transparent;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding: 1rem;
+    font-style: italic;
+  }
+
+  .top-hover:hover {
+    transition: 400ms;
+    color: white;
+    background: rgba(171, 139, 223, 0.61);
+  }
+}
+
+.testimony__thumbs {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 500px;
+  gap: 2rem;
+  padding: 1.5rem;
+  grid-template-areas: 'thumb-1 thumb-2 thumb-3 thumb-4';
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.thumb {
+  background-color: var(--main-color);
+  width: 19rem;
+  height: 35rem;
+  border-radius: 10rem 10rem 1.5rem 1.5rem;
+}
+
+.thumb__img {
+  width: 19rem;
+  height: 19rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  padding: 0.5rem;
+  background-color: var(--thumb-color);
+}
+
+.thumb-text {
+  text-align: center;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.customer {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.p-customer {
+  font-style: italic;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: block;
+  text-align: center;
+  padding: 1rem 0 0.5rem 00;
+  font-family: 'Satoshi-Regular', sans-serif;
+  font-weight: bold;
+}
+
+input {
+  border: none;
+  color: white;
+  background-color: var(--form-color);
+  border-radius: 14px;
+  width: 40rem;
+  height: 3rem;
+  padding: 0 1rem 0 1rem;
+  outline: none;
+}
+
+select {
+  border: none;
+  background-color: var(--form-color);
+  color: white;
+  font-weight: bold;
+  border-radius: 14px;
+  width: 40rem;
+  height: 3rem;
+  padding: 0 1rem 0 1rem;
+}
+
+textarea {
+  border: none;
+  background-color: var(--form-color);
+  color: white;
+  border-radius: 14px;
+  width: 40rem;
+  height: 15rem;
+  resize: none;
+  padding: 1rem;
+  outline: none;
+}
+
+.button {
+  text-align: center;
+  margin: 3rem;
+}
+
+
+
+
+

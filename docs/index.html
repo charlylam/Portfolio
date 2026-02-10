@@ -1,262 +1,445 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heros League</title>
-    <meta name="description" content="">
-    <meta name="author" content="C L">
-    <meta name="robots" content="index,follow">
-    <link rel="stylesheet" href="styles/base/reset.css">
-    <link rel="stylesheet" href="styles/base/base.css">  
-    <link rel="stylesheet" href="styles/components/bento.css">   
-    <link rel="stylesheet" href="styles/components/btn.css">    
-    <link rel="stylesheet" href="styles/components/heroes.css">
-    <link rel="stylesheet" href="styles/components/menu.css">   
-    <link rel="stylesheet" href="styles/rwd/media.css">   
-</head>
+    <meta name="description" content="" />
+    <meta name="author" content="C L" />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="../styles/base/reset.css" />
+    <link rel="stylesheet" href="../styles/base/base.css" />
+    <link rel="stylesheet" href="../styles/components/footer.css" />
+    <link rel="stylesheet" href="../styles/components/btn.css" />
+    <link rel="stylesheet" href="../styles/components/main.css" />
+    <link rel="stylesheet" href="../styles/components/header.css" />
+    <link rel="stylesheet" href="../styles/rwd/media.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header class="header">
-            <nav class="nav-header" aria-label="navigation pincipale">
-                <h1 class="main-title">Heros League</h1> 
-                <ul class="nav-link">
-                    <li class="nav-item">
-                        <a class="nav-item-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item-link" href="#">Nos Héros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item-link" href="#">Témoignages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item-link" href="#">Sauvez-moi !</a>
-                    </li>
-                </ul>
-            </nav>
-            <article class="picture">
-                <img src="ressources/images/hero-banner.png" alt="bannière heros league">
-                <div class="t-p-banner">
-                    <h2 class="title-banner">Heros League</h2>
-                    <p class="p-banner">Des gens un spéciaux, pour des problèmes pas tout à fait normaux</p>
-                </div>
+
+<!-- HEADER -->
+
+      <header id="header_nav" class="header">
+        <nav class="nav-header" aria-label="navigation pincipale">
+          <h1 class="main-title">Heroes League</h1>
+          <ul class="nav-link">
+            <li class="nav-item">
+              <a class="nav-item-link" href="#all_services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="#whole_crew">Nos Héros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="#all_testimonies">Témoignages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="#contact_form">Sauvez-moi !</a>
+            </li>
+          </ul>
+        </nav>
+        <article class="picture">
+          <img
+            src="../ressources/images/hero-banner.png"
+            alt="bannière heros league"
+          />
+          <div class="t-p-banner">
+            <h2 class="title-banner">Heroes League</h2>
+            <p class="p-banner">
+              Des gens un spéciaux, pour des problèmes pas tout à fait normaux
+            </p>
+          </div>
+        </article>
+      </header>
+
+<!-- MAIN -->
+    
+       <!-- LES SERVICES -->
+
+      <main>
+        <section id="all_services" class="services">
+          <h3 class="secondary-title">
+            Nos&nbsp;<span class="emph">supers</span>&nbsp;Services
+          </h3>
+          <div class="super-services">
+            <article class="bento bento-moving">
+              <h4 class="choices">Super Déménagement</h4>
+              <p class="content">
+                pour des déménagements sans effort et sans casse* !
+              </p>
+              <button
+                class="btn"
+                type="button"
+                aria-label="Voir le tarif du service Super Déménagement"
+              >
+                A partir de 233 €
+              </button>
+              <p class="details">
+                * Nous ne pouvons malheureusement pas garantir que vos objets
+                fragiles ou votre chat Gribouille survivront à un combat épique
+                entre super-vilains lors du trajet.
+              </p>
             </article>
-        </header>   
 
-        <main>
-            <section class="services">
-                <h3 class="secondary-title">Nos&nbsp;<span class="emph">supers</span>&nbsp;Services</h3>
-                <div class="super-services">
-                <article class="bento bento-moving">
-                    <h4 class="choices">Super Déménagement</h4>
-                    <p class="content">pour des déménagements sans effort et sans casse* !</p>
-                    <button class="btn" type="button" aria-label="Voir le tarif du service Super Déménagement">A partir de 233 €</button>
-                    <p class="details">* Nous ne pouvons malheureusement pas garantir que vos objets fragiles ou votre chat Gribouille survivront à un combat épique entre super-vilains lors du trajet.</p>
-                </article>
+            <article class="bento bento-delivery">
+              <h4 class="choices">Livraison de Repas</h4>
+              <p class="content">pour des livraisons super-soniques*</p>
+              <button
+                class="btn"
+                type="button"
+                aria-label="Voir le tarif du service livraison de repas"
+              >
+                A partir de 12 €
+              </button>
+              <p class="details">
+                * Pour éviter tout dommage à votre porte, merci de la laisser
+                ouverte, certains super-héros n'ont pas conscience de leur
+                force. Vous pouvez souscrire à notre assurance Porte en vrac
+                pour 5 € de plus.
+              </p>
+            </article>
 
-                <article class="bento bento-delivery">
-                    <h4 class="choices">Livraison de Repas</h4>
-                    <p class="content">pour des livraisons super-soniques*</p>
-                    <button class="btn" type="button" aria-label="Voir le tarif du service livraison de repas">A partir de 12 €</button>
-                    <p class="details">* Pour éviter tout dommage à votre porte, merci de la laisser ouverte, certains super-héros n'ont pas conscience de leur force. Vous pouvez souscrire à notre assurance Porte en vrac pour 5 € de plus.</p>
-                </article>
+            <article class="bento bento-traffic">
+              <h4 class="choices">Z'héro Bouchons</h4>
+              <p class="content">Pour les clients pressés !*</p>
+              <button
+                class="btn"
+                type="button"
+                aria-label="Voir le tarif du service Z'héro bouchons"
+              >
+                1,33 €/km
+              </button>
+              <p class="details">
+                * Le mode de déplacement peut être différent en fonction de la
+                disponibilité des héros. Merci de préciser à la commande si vous
+                avez le mal des transports soniques.
+              </p>
+            </article>
 
-                <article class="bento bento-traffic">
-                    <h4 class="choices">Z'héro Bouchons</h4>
-                    <p class="content">Pour les clients pressés !*</p>
-                    <button class="btn" type="button" aria-label="Voir le tarif du service Z'héro bouchons">1,33 €/km</button>
-                    <p class="details">* Le mode de déplacement peut être différent en fonction de la disponibilité des héros. Merci de préciser à la commande si vous avez le mal des transports soniques.</p>
-                </article>
+            <article class="bento bento-party">
+              <h4 class="choices">Sauvetage de soirée</h4>
+              <p class="content">Pour les soirées booooring !</p>
+              <button
+                class="btn"
+                type="button"
+                aria-label="Voir le tarif du service Sauvetage de soirée"
+              >
+                A partir de 50 €/h
+              </button>
+              <p class="details">
+                * Nous ne pouvons malheureusement pas garantir que votre
+                super-héros ne se fera pas la malle si la soirée n'est pas
+                sauvable.
+              </p>
+            </article>
 
-                <article class="bento bento-party">
-                    <h4 class="choices">Sauvetage de soirée</h4>
-                    <p class="content">Pour les soirées booooring !</p>
-                    <button class="btn" type="button" aria-label="Voir le tarif du service Sauvetage de soirée">A partir de 50 €/h</button>
-                    <p class="details">* Nous ne pouvons malheureusement pas garantir que votre super-héros ne se fera pas la malle si la soirée n'est pas sauvable.</p>
-                </article>
+            <article class="bento bento-feeling-down">
+              <h4 class="choices">Moral à Z'héro</h4>
+              <p class="content">
+                Pour les jours gris et les cœurs lourds, des héros au moral
+                d'acier.*
+              </p>
+              <button
+                class="btn"
+                type="button"
+                aria-label="Voir le tarif du service Moral à z'héro"
+              >
+                A partir de 100 €
+              </button>
+              <p class="details">
+                * Il peut arriver que le moral de votre héros ne soit pas au
+                beau fixe et vous bassine avec sa défaite de la veille, dans ce
+                cas, nous vous remboursons 50 % de la prestation.
+              </p>
+            </article>
+          </div>
+        </section>
 
-                <article class="bento bento-feeling-down">
-                    <h4 class="choices">Moral à Z'héro</h4>
-                    <p class="content">Pour les jours gris et les cœurs lourds, des héros au moral d'acier.*</p>
-                    <button class="btn" type="button" aria-label="Voir le tarif du service Moral à z'héro">A partir de 100 €</button>
-                    <p class="details">* Il peut arriver que le moral de votre héros ne soit pas au beau fixe et vous bassine avec sa défaite de la veille, dans ce cas, nous vous remboursons 50 % de la prestation.</p>
-                </article>
+        <!-- L'EQUIPE -->
+
+        <section id="whole_crew" class="crew">
+          <h3 class="secondary-title">
+            Nos&nbsp;<span class="emph">supers</span>&nbsp;Héros
+          </h3>
+          <div class="heroes">
+            <article class="card card-cat">
+              <div class="img-hover" tabindex="0" aria-describedby="desc-cat">
+                <img
+                  src="../ressources/images/catastrophic.png"
+                  alt="Super héros Cat Astrophic"
+                />
+                <div class="sticker">
+                  <h5 class="name">Cat Astrophic</h5>
+                  <p class="p-sticker">
+                    Avec son super ronron, il saura vous réconforter dans
+                    n'importe quelle situation.
+                  </p>
                 </div>
-            </section>
+                <div class="top-hover" id="desc-cat">
+                  <p class="p-hover">
+                    Ne contrôle pas tout à fait sa patte droite, et peut être
+                    amené à vous mettre une - plus ou moins petite - tape sur la
+                    tête.
+                  </p>
+                </div>
+              </div>
+            </article>
 
-            <section class="crew">
-                <h3 class="secondary-title">Nos&nbsp;<span class="emph">supers</span>&nbsp;Héros</h3>
-                <div class="heroes" >
-                <article class="card card-cat">
-                        <div class="img-hover" tabindex="0" aria-describedby="desc-cat">
-                            <img src="ressources/images/catastrophic.png" alt="Super héros Cat Astrophic">    
-                            <div class="sticker">                   
-                                <h5 class="name">Cat Astrophic</h5>
-                                <p class="p-sticker">Avec son super ronron, il saura vous réconforter dans n'importe quelle situation.</p>
-                            </div>
-                            <div class="top-hover" id="desc-cat">
-                                <p class="p-hover">Ne contrôle pas tout à fait sa patte droite, et peut être amené à vous mettre une - plus ou moins petite - tape sur la tête.</p>
-                            </div>
-                        </div>
-                    </article>
+            <article class="card card-carotte">
+              <div class="img-hover" tabindex="0" aria-describedby="desc-car">
+                <img
+                  src="../ressources/images/carotte-woman.png"
+                  alt="Super héroïne Carotte Woman"
+                />
+                <div class="sticker">
+                  <h5 class="name">Carotte Woman</h5>
+                  <p class="p-sticker">
+                    Mis à part son apparence de carotte, on ne sait pas bien à
+                    quoi elle est forte, mais on va trouver.
+                  </p>
+                </div>
+                <div class="top-hover" id="desc-car">
+                  <p class="p-hover">
+                    Attention, elle essaiera souvent de vous faire payer plus
+                    que le prix convenu avec Heros League. N'acceptez pas.
+                  </p>
+                </div>
+              </div>
+            </article>
 
-                    <article class="card card-carotte">
-                        <div class="img-hover" tabindex="0" aria-describedby="desc-car">
-                            <img src="ressources/images/carotte-woman.png" alt="Super héroïne Carotte Woman">    
-                            <div class="sticker">                   
-                                <h5 class="name">Carotte Woman</h5>
-                                <p class="p-sticker">Mis à part son apparence de carotte, on ne sait pas bien à quoi elle est forte, mais on va trouver.</p>
-                            </div>
-                            <div class="top-hover" id="desc-car">
-                                <p class="p-hover">Attention, elle essaiera souvent de vous faire payer plus que le prix convenu avec Heros League. N'acceptez pas.</p>
-                            </div>
-                        </div>
-                    </article>
+            <article class="card card-ultraquenarde">
+              <div class="img-hover" tabindex="0" aria-describedby="desc-ult">
+                <img
+                  src="../ressources/images/ultraquenarde.png"
+                  alt="Super héroïne Ultraquenarde"
+                />
+                <div class="sticker">
+                  <h5 class="name">Ultraquenarde</h5>
+                  <p class="p-sticker">
+                    Peut vous sortir de n'importe quel traquenard.
+                  </p>
+                </div>
+                <div class="top-hover" id="desc-ult">
+                  <p class="p-hover">
+                    Vous sort du traquenard… Mais il arrive qu'elle vous
+                    entraîne dans un autre.
+                  </p>
+                </div>
+              </div>
+            </article>
 
-                    <article class="card card-ultraquenarde">
-                        <div class="img-hover" tabindex="0" aria-describedby="desc-ult">
-                            <img src="ressources/images/ultraquenarde.png" alt="Super héroïne Ultraquenarde">    
-                            <div class="sticker">                   
-                                <h5 class="name">Ultraquenarde</h5>
-                                <p class="p-sticker">Peut vous sortir de n'importe quel traquenard.</p>
-                            </div>
-                            <div class="top-hover" id="desc-ult">
-                                <p class="p-hover">Vous sort du traquenard… Mais il arrive qu'elle vous entraîne dans un autre.</p>
-                            </div>
-                        </div>
-                    </article>
+            <article class="card card-poulpy">
+              <div class="img-hover" tabindex="0" aria-describedby="desc-poul">
+                <img
+                  src="../ressources/images/poulpy.png"
+                  alt="Super héro Poulpy"
+                />
+                <div class="sticker">
+                  <h5 class="name">Poulpy</h5>
+                  <p class="p-sticker">
+                    Il a des tentacules gigantesques, super pratique pour les
+                    déménagements.
+                  </p>
+                </div>
+                <div class="top-hover" id="desc-poul">
+                  <p class="p-hover">Un peu collant.</p>
+                </div>
+              </div>
+            </article>
 
-                <article class="card card-poulpy">
-                        <div class="img-hover" tabindex="0" aria-describedby="desc-poul">
-                            <img src="ressources/images/poulpy.png" alt="Super héro Poulpy">    
-                            <div class="sticker">                   
-                                <h5 class="name">Poulpy</h5>
-                                <p class="p-sticker">Il a des tentacules gigantesques, super pratique pour les déménagements.</p>
-                            </div>
-                            <div class="top-hover" id="desc-poul">
-                                <p class="p-hover">Un peu collant.</p>
-                            </div>
-                        </div>
-                    </article>
+            <article class="card card-orang">
+              <div class="img-hover" tabindex="0" aria-describedby="desc-orang">
+                <img
+                  src="../ressources/images/oran-wu-tang-clan.png"
+                  alt="Super héro Orang Wu-Tang Clan"
+                />
+                <div class="sticker">
+                  <h5 class="name">Orang Wu-Tang Clan</h5>
+                  <p class="p-sticker">
+                    Un gros singe agile, multi-tâche, qui intervient tout en
+                    rappant.
+                  </p>
+                </div>
+                <div class="top-hover" id="desc-orang">
+                  <p class="p-hover">
+                    Peut être amené à vous demander de financer son prochain
+                    album, ne pas accepter.
+                  </p>
+                </div>
+              </div>
+            </article>
 
-                <article class="card card-orang">
-                        <div class="img-hover" tabindex="0" aria-describedby="desc-orang">
-                            <img src="ressources/images/oran-wu-tang-clan.png" alt="Super héro Orang Wu-Tang Clan">    
-                            <div class="sticker">                   
-                                <h5 class="name">Orang Wu-Tang Clan</h5>
-                                <p class="p-sticker">Un gros singe agile, multi-tâche, qui intervient tout en rappant.</p>
-                            </div>
-                            <div class="top-hover" id="desc-orang">
-                                <p class="p-hover">Peut être amené à vous demander de financer son prochain album, ne pas accepter.</p>
-                            </div>
-                        </div>
-                    </article>
+            <article class="card card-superime">
+              <div class="img-hover" tabindex="0" aria-describedby="desc-sup">
+                <img
+                  src="../ressources/images/superime.png"
+                  alt="Super héro Superimé"
+                />
+                <div class="sticker">
+                  <h5 class="name">Superimé</h5>
+                  <p class="p-sticker">
+                    Un feu super-héro qui ne veut pas partir à la retraite.
+                  </p>
+                </div>
+                <div class="top-hover" id="desc-sup">
+                  <p class="p-hover">
+                    N'a plus de pouvoir mais refuse de l'admettre, peut être
+                    amené à vous raconter des histoires de l'époque où il était
+                    encore super.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <footer class="all">
+            <button class="btn btn__heroes" type="button">Tous nos héros</button>
+          </footer>
+        </section>
 
-                    <article class="card card-superime">
-                        <div class="img-hover" tabindex="0" aria-describedby="desc-sup">
-                            <img src="ressources/images/superime.png" alt="Super héro Superimé">    
-                            <div class="sticker">                   
-                                <h5 class="name">Superimé</h5>
-                                <p class="p-sticker">Un feu super-héro qui ne veut pas partir à la retraite.</p>
-                            </div>
-                            <div class="top-hover" id="desc-sup">
-                                <p class="p-hover">N'a plus de pouvoir mais refuse de l'admettre, peut être amené à vous raconter des histoires de l'époque où il était encore super.</p>
-                            </div>
-                        </div>
-                    </article>
-                    </div> 
-                    <footer class="all"><button class="btn" type="button">tous nos héros</button></footer>                  
-                </section>
+        <!-- LES TEMOIGNAGES -->
 
-            <section class="testimony">
-                <h3 class="secondary-title" >Les Témoignages de nos clients</h3>
-                    <article class="thumb thumb-1">
-                        <img src="ressources/images/testimony-1.png" alt="témoignage 1">    
-                        <div class="thumb-text">                   
-                            <h6 class="customer">Tombédeu .O</h6>
-                            <p class="p-customer">"Grâce à Heros League, j'ai pu déménager super rapidement. Attention à l'odeur laissée par les tentacules ceci-dit. Merci Poulpy !"</p>
-                        </div>
-                    </article>
+        <section id="all_testimonies" class="testimony">
+          <h3 class="secondary-title">Les Témoignages de nos clients</h3>
+          <div class="testimony__thumbs">
+          <article class="thumb thumb-1">
+            <img class="thumb__img"
+              src="../ressources/images/testimony-1.png"
+              alt="témoignage 1"
+            />
+            <div class="thumb-text">
+              <h6 class="customer">Tombédeu .O</h6>
+              <p class="p-customer">
+                "Grâce à Heros League, j'ai pu déménager super rapidement.
+                Attention à l'odeur laissée par les tentacules ceci-dit. Merci
+                Poulpy !"
+              </p>
+            </div>
+          </article>
 
-                    <article class="thumb thumb-2">
-                        <img src="ressources/images/testimony-2.png" alt="témoignage 2">    
-                        <div class="thumb-text">                   
-                            <h6 class="customer">Jelia N.</h6>
-                            <p class="p-customer">"Ultraquenarde m'a sauvé la vie ! J'allais tout perdre et sur ses conseils j'ai investi dans les bitcoins, affaire à suivre !"</p>
-                        </div>
-                    </article>
+          <article class="thumb thumb-2">
+            <img class="thumb__img"
+              src="../ressources/images/testimony-2.png"
+              alt="témoignage 2"
+            />
+            <div class="thumb-text">
+              <h6 class="customer">Jelia N.</h6>
+              <p class="p-customer">
+                "Ultraquenarde m'a sauvé la vie ! J'allais tout perdre et sur
+                ses conseils j'ai investi dans les bitcoins, affaire à suivre !"
+              </p>
+            </div>
+          </article>
 
-                    <article class="thumb thumb-1">
-                        <img src="ressources/images/testimony-3.png" alt="témoignage 3">    
-                        <div class="thumb-text">                   
-                            <h6 class="customer">Bob O.</h6>
-                            <p class="p-customer">"Je ne remercierai jamais assez Carotte Woman d'avoir retrouvé mon chat. Apparemment c'est normal si il est orange et plus noir, elle l'aurait retrouvé dans un produit chimique spécial. Je la crois sur parole !"</p>
-                        </div>
-                    </article>
+          <article class="thumb thumb-1">
+            <img class="thumb__img"
+              src="../ressources/images/testimony-3.png"
+              alt="témoignage 3"
+            />
+            <div class="thumb-text">
+              <h6 class="customer">Bob O.</h6>
+              <p class="p-customer">
+                "Je ne remercierai jamais assez Carotte Woman d'avoir retrouvé
+                mon chat. Apparemment c'est normal si il est orange et plus
+                noir, elle l'aurait retrouvé dans un produit chimique spécial.
+                Je la crois sur parole !"
+              </p>
+            </div>
+          </article>
 
-                    <article class="thumb thumb-1">
-                        <img src="ressources/images/testimony-4.png" alt="témoignage 4">    
-                        <div class="thumb-text">                   
-                            <h6 class="customer">Coupéhala H.</h6>
-                            <p class="p-customer">"Supervif a été super, il m'a sortie des bouchons et amenée au travail en un temps record. Par contre j'aimerais bien retrouver ma voiture maintenant."</p>
-                        </div>
-                    </article>
-            </section>
+          <article class="thumb thumb-1">
+            <img class="thumb__img"
+              src="../ressources/images/testimony-4.png"
+              alt="témoignage 4"
+            />
+            <div class="thumb-text">
+              <h6 class="customer">Coupéhala H.</h6>
+              <p class="p-customer">
+                "Supervif a été super, il m'a sortie des bouchons et amenée au
+                travail en un temps record. Par contre j'aimerais bien retrouver
+                ma voiture maintenant."
+              </p>
+            </div>
+          </article>
+          <div>         
+        </section>
 
-            <section class="contact">
-                <h3 class="secondary-title">Sauvez-moi !</h3>
-                    <form action="traitement.php" method="POST">
-                        <div class="form">
-                            <label for="name">Nom</label>
-                            <input type="text" id="name" name="user_name" required aria-required="true"/>
-                        </div>
-                        <div class="form">
-                            <label for="mail">Email</label>
-                            <input type="email" id="mail" name="user_mail" required aria-required="true"/>
-                        </div>
-                        <div class="form">
-                            <label for="services">Services</label>
-                            <select id="services" name="services" required aria-required="true">
-                                <option value="service 1">Super Déménagement</option>
-                                <option value="service 2">Livraison de Repas</option>
-                                <option value="service 3">Z'héro Bouchons</option>
-                                <option value="service 4">Moral à Z'héro</option>
-                                <option value="service 5">Sauvetage de soiréet</option>
-                            </select>
-                        </div>
-                        <div class="form">
-                            <label for="msg">Message</label>
-                            <textarea id="msg" name="user_message" required></textarea>
-                        </div>
-                        <div class="button">
-                            <button type="submit">Envoyer</button>
-                        </div>
-                    </form>
-            </section>
-        </main>
+        <!-- CONTACT -->
 
-        <footer class="nav-footer">
-            <p class="footer-title">Heros League</p> 
-                <nav class="nav-menu-footer" aria-label="Navigation de pied de page">
-                    <ul class="menu-footer">
-                        <li class="menu-footer-item">
-                            <a class="item-link" href="#">Services</a>
-                        </li>
-                        <li class="menu-footer-item">
-                            <a class="item-link" href="#">Nos Héros</a>
-                        </li>
-                        <li class="menu-footer-item">
-                            <a class="item-link" href="#">Témoignages</a>
-                        </li>
-                        <li class="menu-footer-item">
-                            <a class="item-link" href="#">Sauvez-moi !</a>
-                        </li>
-                    </ul>
-                </nav>
-                    <p class="p-footer">© 2024 Heros League - Tous droits réservés</p>
-        </footer>
+        <section id="contact_form" class="contact">
+          <h3 class="secondary-title">Sauvez-moi !</h3>
+          <div class="contact_form">
+          <form action="traitement.php" method="POST">
+            <div class="form">
+              <label for="name">Nom</label>
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="form">
+              <label for="mail">Email</label>
+              <input
+                type="email"
+                id="mail"
+                name="user_mail"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="form">
+              <label for="services">Services</label>
+              <select
+                id="services"
+                name="services"
+                required
+                aria-required="true"
+              >
+                <option value="service 1">Super Déménagement</option>
+                <option value="service 2">Livraison de Repas</option>
+                <option value="service 3">Z'héro Bouchons</option>
+                <option value="service 4">Moral à Z'héro</option>
+                <option value="service 5">Sauvetage de soiréet</option>
+              </select>
+            </div>
+            <div class="form">
+              <label for="msg">Message</label>
+              <textarea id="msg" name="user_message" required></textarea>
+            </div>
+            <div class="button">
+              <button class="btn" type="submit">Envoyer</button>
+            </div>
+          </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="nav-footer">
+        <h4 class="footer-title">Heroes League</h4>
+        <nav class="nav-menu-footer" aria-label="Navigation de pied de page">
+          <ul class="menu-footer">
+            <li class="menu-footer-item">
+              <a class="item-link" href="#header_nav">Accueil</a>
+            </li>
+            <li class="menu-footer-item">
+              <a class="item-link" href="#all_services">Services</a>
+            </li>
+            <li class="menu-footer-item">
+              <a class="item-link" href="#whole_crew">Nos Héros</a>
+            </li>
+            <li class="menu-footer-item">
+              <a class="item-link" href="#all_testimonies">Témoignages</a>
+            </li>
+            <li class="menu-footer-item">
+              <a class="item-link" href="#contact_form">Sauvez-moi !</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="p-footer">© 2024 Heroes League - Tous droits réservés</p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
