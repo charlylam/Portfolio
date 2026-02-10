@@ -9,10 +9,10 @@
     <meta name="robots" content="index,follow" />
     <link rel="stylesheet" href="../styles/base/reset.css" />
     <link rel="stylesheet" href="../styles/base/base.css" />
-    <link rel="stylesheet" href="../styles/components/bento.css" />
+    <link rel="stylesheet" href="../styles/components/footer.css" />
     <link rel="stylesheet" href="../styles/components/btn.css" />
-    <link rel="stylesheet" href="../styles/components/heroes.css" />
-    <link rel="stylesheet" href="../styles/components/menu.css" />
+    <link rel="stylesheet" href="../styles/components/main.css" />
+    <link rel="stylesheet" href="../styles/components/header.css" />
     <link rel="stylesheet" href="../styles/rwd/media.css" />
   </head>
 
@@ -21,21 +21,21 @@
 
 <!-- HEADER -->
 
-      <header class="header">
+      <header id="header_nav" class="header">
         <nav class="nav-header" aria-label="navigation pincipale">
           <h1 class="main-title">Heroes League</h1>
           <ul class="nav-link">
             <li class="nav-item">
-              <a class="nav-item-link" href="#">Services</a>
+              <a class="nav-item-link" href="#all_services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-item-link" href="#">Nos Héros</a>
+              <a class="nav-item-link" href="#whole_crew">Nos Héros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-item-link" href="#">Témoignages</a>
+              <a class="nav-item-link" href="#all_testimonies">Témoignages</a>
             </li>
             <li class="nav-item">
-              <a class="nav-item-link" href="#">Sauvez-moi !</a>
+              <a class="nav-item-link" href="#contact_form">Sauvez-moi !</a>
             </li>
           </ul>
         </nav>
@@ -58,7 +58,7 @@
        <!-- LES SERVICES -->
 
       <main>
-        <section class="services">
+        <section id="all_services" class="services">
           <h3 class="secondary-title">
             Nos&nbsp;<span class="emph">supers</span>&nbsp;Services
           </h3>
@@ -158,7 +158,7 @@
 
         <!-- L'EQUIPE -->
 
-        <section class="crew">
+        <section id="whole_crew" class="crew">
           <h3 class="secondary-title">
             Nos&nbsp;<span class="emph">supers</span>&nbsp;Héros
           </h3>
@@ -299,7 +299,7 @@
 
         <!-- LES TEMOIGNAGES -->
 
-        <section class="testimony">
+        <section id="all_testimonies" class="testimony">
           <h3 class="secondary-title">Les Témoignages de nos clients</h3>
           <div class="testimony__thumbs">
           <article class="thumb thumb-1">
@@ -366,7 +366,7 @@
 
         <!-- CONTACT -->
 
-        <section class="contact">
+        <section id="contact_form" class="contact">
           <h3 class="secondary-title">Sauvez-moi !</h3>
           <div class="contact_form">
           <form action="traitement.php" method="POST">
@@ -422,16 +422,19 @@
         <nav class="nav-menu-footer" aria-label="Navigation de pied de page">
           <ul class="menu-footer">
             <li class="menu-footer-item">
-              <a class="item-link" href="#">Services</a>
+              <a class="item-link" href="#header_nav">Accueil</a>
             </li>
             <li class="menu-footer-item">
-              <a class="item-link" href="#">Nos Héros</a>
+              <a class="item-link" href="#all_services">Services</a>
             </li>
             <li class="menu-footer-item">
-              <a class="item-link" href="#">Témoignages</a>
+              <a class="item-link" href="#whole_crew">Nos Héros</a>
             </li>
             <li class="menu-footer-item">
-              <a class="item-link" href="#">Sauvez-moi !</a>
+              <a class="item-link" href="#all_testimonies">Témoignages</a>
+            </li>
+            <li class="menu-footer-item">
+              <a class="item-link" href="#contact_form">Sauvez-moi !</a>
             </li>
           </ul>
         </nav>

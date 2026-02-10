@@ -1,3 +1,5 @@
+/* TITRES H3  */
+
 .secondary-title {
   display: flex;
   justify-content: center;
@@ -19,6 +21,69 @@
     margin: 1.5rem;
   }
 }
+
+/* LES SERVICES  */
+
+.super-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 275px 275px 275px;
+  gap: 1rem;
+  padding: 2.5rem;
+  grid-template-areas:
+    'bento-moving bento-delivery bento-delivery'
+    'bento-moving bento-traffic bento-party'
+    'bento-feeling-down bento-feeling-down bento-party';
+}
+
+.bento-moving {
+  grid-area: bento-moving;
+}
+
+.bento-delivery {
+  grid-area: bento-delivery;
+}
+traffic .bento-traffic {
+  grid-area: bento-traffic;
+}
+
+.bento-party {
+  grid-area: bento-party;
+}
+
+.bento-feeling-down {
+  grid-area: bento-feeling-down;
+}
+
+.bento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--main-color);
+  border-radius: 1rem;
+  padding: 6rem 1rem 6rem 1rem;
+
+  & .choices {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  & .content {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+
+  & .details {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+}
+
+/* L'EQUIPE  */
 
 .heroes {
   display: grid;
@@ -172,10 +237,13 @@ label {
 
 input {
   border: none;
+  color: white;
   background-color: var(--form-color);
   border-radius: 14px;
   width: 40rem;
   height: 3rem;
+  padding: 0 1rem 0 1rem;
+  outline: none;
 }
 
 select {
@@ -197,6 +265,8 @@ textarea {
   width: 40rem;
   height: 15rem;
   resize: none;
+  padding: 1rem;
+  outline: none;
 }
 
 .button {
@@ -204,67 +274,7 @@ textarea {
   margin: 3rem;
 }
 
-.nav-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 15rem;
-  background-color: var(--main-color);
-  border-radius: 100% 100% 0 0;
-  padding: 3rem;
-}
 
-.footer-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding-bottom: 2rem;
-}
 
-.menu-footer {
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
-  padding-bottom: 3rem;
-}
 
-.menu-footer-item {
-  list-style: none;
-}
 
-/* p
-        display: flex;
-        flex-direction: column;
-        align-items: center ;
-        justify-content: center;
-        border-radius: 1rem;
-        padding: 6rem 1rem 6rem 1rem;
-
-        & .choices {
-            color: var(--main-color);
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        & .content {
-            text-align: center;
-            font-weight: bold;
-            padding-bottom: 1rem;
-        }
-
-        & .btn {
-            color: white;
-            font-weight: bold;
-            background-color: var(--main-color);
-            border: 1px solid var(--main-color);
-            border-radius: 1rem;
-            padding: 0.5rem;
-            margin-bottom: 3rem;
-        }
-
-        & .details {
-            text-align: center;
-            font-style: italic;
-            font-size: 0.5rem;
-        }
-
-    }   */
